@@ -1,0 +1,11 @@
+*{
+    background-color: rgb(82, 82, 82);
+}
+
+.loginbutton{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top:300px;
+    background-color: aqua;
+}

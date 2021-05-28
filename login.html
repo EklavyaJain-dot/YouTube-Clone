@@ -1,0 +1,52 @@
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YouTube Clone: Login</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        
+
+        <center><h1 style="color: white; top: 10px; position: relative;">Login</h1></center>
+        <center> <h2 style="color: white; top:190px;position: relative;">Username</h2></center>
+        <center> <input style="color: white; top:220px;position: relative; width: 600px; height: 70px;border-radius: 15px; font-size: 30px;" type="text" id="username" placeholder="Username"></center>
+        <center><h2 style="color: white; top:250px;position: relative;">Password</h2></center>
+        <center><input type="password" style="color: white; top:290px;position: relative;width:600px;height: 70px;border-radius:15px;font-size: 30px;" id="password" placeholder="Password"></center>
+     
+        <center>
+     <button class="loginbutton" onclick="getinfo()">Login</button>
+     </center>
+<script>
+
+var people = [
+{
+    id:"Eklavya",
+    password:"Eklavya"
+},
+
+{
+    id:"Sam",
+    password:"Sam"
+}
+]
+ function getinfo(){
+const id = document.getElementById('username').value;
+const password = document.getElementById('password').value;
+
+for(i =- 0; i < people.length; i++){
+    if(id === people[i].id && password === people[i].password){
+        document.write(id + " is logged in")
+        window.location.href="Recommendvideos.html"
+        return 
+    } 
+}
+document.write('Wrong ID or Password, Reload the page and try again')
+
+}
+
+</script>
+
+    </body>
+    </html>

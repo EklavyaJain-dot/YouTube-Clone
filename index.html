@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="shortcut icon" href="unnamed (2).jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+    <span class="material-icons" id="menu" onclick="openNav();">menu</span>
+
+    <a href="index.html">
+    <img src="logo.jpg" alt="logo" width="200" height="100" class="logo">
+
+</a>
+
+<input type="text" class="inputbox" placeholder="Search">
+
+<span class="material-icons" id="Search">search</span>
+
+<span class="material-icons" id="mic">mic</span>
+
+<span class="material-icons" id="camera">video_call</span>
+
+<span class="material-icons" id="apps">apps</span>
+
+<span class="material-icons" id="bell">notifications</span>
+
+<a href="login.html"><span class="material-icons" id="profile">account_circle</span></a>
+
+    </div>
+
+<div class="sidenav" id="sidenav">
+
+    <a href="javascript:void(0)" class="closebutton" onclick="closeNav();">
+        &times;
+    </a>
+
+    <a href="#"><span class="material-icons">home</span>Home</a>
+
+    <a href="#"><span class="material-icons">explore</span>Explore</a>
+
+    <a href="#"><span class="material-icons">subscriptions</span>Subscriptions</a>
+
+<hr>
+
+<a href="#"><span class="material-icons">video_library</span>Library</a>
+<a href="#"><span class="material-icons">history</span>History</a>
+<a href="#"><span class="material-icons">smart_display</span>Your Videos</a>
+<a href="#"><span class="material-icons">watch_later</span>Watch Later</a>
+<a href="#"><span class="material-icons">thumb_up_alt</span>Liked Videos</a>
+<a href="#"><span class="material-icons">expand_more</span>Show More</a>
+
+<hr>
+
+<br><br><br>
+
+<h2>Subscriptions</h2>
+
+<h3>No Subscriptions Here</h3>
+<br><br><br>
+<hr>
+<br><br><br>
+<h2>More From YouTube</h2>
+
+<h2>YouTube Premium</h2>
+
+</div>
+
+<script>
+   
+   const openNav = () => {
+       document.getElementById('sidenav').style.width = "250px";
+   }
+
+   const closeNav = () => {
+       document.getElementById('sidenav').style.width = "0";
+   };
+</script>
+
+
+</body>
+</html>

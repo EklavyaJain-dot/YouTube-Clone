@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your Video</title>
+</head>
+<body>
+    
+
+<center>
+
+    <video width="720" height="480" controls="controls" id="video"></video>
+
+    <input type="file" accept="video/*" id="upload" onchange="uploadvideo()">
+
+    <button id="start" onclick="start();">Start</button>
+
+    <h1><b>Note: Please Upload only mp4 OR mpv videos</b></h1>
+
+</center>
+
+
+<script>
+  function uploadvideo(){
+var input = document.getElementById('upload');
+var filereader = new FileReader();
+filereader.readAsDataURL(input.files[0]);
+filereader.onload = function(){
+    document.getElementById('video').src = filereader.result;
+}
+  }
+
+  function start(){
+      document.getElementById('video').play();
+  }
+</script>
+
+</body>
+</html>
